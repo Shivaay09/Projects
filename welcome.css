@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.main {
+    display: flex;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2em;
+    color: #359381;
+    pointer-events: none;
+    margin-right: 270px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: #359381;
+    color: white;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text {
+    position: absolute;
+    font-size: 5em;
+    color: #359381;
+    text-shadow: 2px 2px 4px #f9f1f1;
+}
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.sec {
+    position: relative;
+    background: #359397;
+    padding: 100px;
+}
+
+.sec h2 {
+    font-size: 3em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.sec p {
+    font-size: 1em;
+    color: white;
+    font-weight: 300;
+}
+
+.sec.des h1 {
+    color: white;
+}
+
+.sec .btn {
+    width: 100%;
+    height: 45px;
+    background: #359381;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-decoration-break: 0px 0px 10px #f4f2f2fa;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.sec .btn:hover {
+    background: #359381;
+    color: #003329;
+}
+
+.parallax2 {
+    background: url('/img/seabed.png');
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 40vh;
+}
+
+.parallax2 img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 10%;
+    pointer-events: none;
+}
+
+.parallax2 .brr1,
+.parallax2 .brr2,
+.parallax2 .brr3,
+.parallax2 .brr4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+#footer {
+    padding: 100px 0 20px;
+    background: #359397;
+    position: relative;
+}
+
+.footer-row {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-right {
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-row h1 {
+    margin: 10px 0;
+}
+
+.footer-row p {
+    line-height: 35px;
+}
+
+.footer-left .fa,
+.footer-right .fa {
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+}
+
+.social-links {
+    text-align: center;
+}
+
+.social-links .fa {
+    height: 40px;
+    width: 40px;
+    font-size: 24px;
+    line-height: 40px;
+    border: 1px solid #009688;
+    margin: 40px 5px 0;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.social-links .fa:hover {
+    background: #fff;
+    color: #009688;
+    transform: translateY(-7px);
+}
+
+.social-links p {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 770px) {
+    .footer-left,
+    .footer-right {
+        flex-basis: 100%;
+        font-size: 14px;
+    }
+
+    .footer-img {
+        overflow: hidden;
+    }
+
+    .footer-img {
+        top: 25%;
+    }
+
+    .about-us {
+        width: 80%;
+        margin: auto;
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+
+    .about-col {
+        flex-basis: 48%;
+        padding: 30px 2px;
+    }
+
+    .about-col img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .about-col h1 {
+        padding-top: 0;
+    }
+
+    .about-col p {
+        padding: 15px 0 25px;
+    }
+}
+
+.red-btn {
+    border: 1px solid #009688;
+    background: transparent;
+    color: #009688;
+}
+
+.title-text {
+    text-align: center;
+    padding-bottom: 70px;
+    padding-top: 70px;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}

@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    height: .1rem;
+    width: .5rem;
+}
+::-webkit-scrollbar-track{
+    background-color: #67ccff;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #194eb9;
+    border-radius: 5rem;
+}
+body{
+    background: #1d002c;
+    color: #fff;
+    overflow-x: hidden;
+}
+header{
+    padding: 25px 10%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 1001;
+}
+.logo{
+    font-size: 2rem;
+    color: #12f7ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+ul.navlist{
+    display: flex;
+    align-items: center;
+}
+.navlist li{
+    margin-left: 1rem;
+}
+.navlist li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 5px 12px;
+    border: 2px solid #12f7ff;
+    border-radius: 25px;
+    transition: all .3s ease;
+}
+.navlist li a:hover,
+.navlist li a.active{
+    box-shadow: 0 0 1rem #12f7ff;
+    background: #12f7ff;
+    color: #1d002c;
+}
+section{
+    min-height: 100vh;
+}
+.parallax-home{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.parallax-home img{
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+.parallax-home #text{
+    position: absolute;
+    font-size: 2.5rem;
+    text-shadow: 0 10px 4px rgba(0, 0, 0, 85);
+    top: 80%;
+    left: 3%;
+}
+.parallax-home img#moon , .about img#desert-moon{
+    mix-blend-mode: screen;
+}
+.about{
+    position: relative;
+}
+.about img{
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+.about img.about-waterfall{
+    position: absolute;
+    top: -95px;
+}
+.about .info-box{
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    width: 50%;
+    z-index: 1003;
+    background: #1d002c;
+}
+.about .info-box h2{
+    font-size: 3.5rem;
+}
+.about .info-box p{
+    margin-bottom: 1.5rem;
+    margin-top: .5rem;
+}
+.btn{
+    background: #12f7ff;
+    color: #1d002c;
+    text-decoration:none;
+    border-radius: 25px;
+    padding: .5rem 1rem;
+    transition: all .3s ease;
+    border: 2px solid #12f7ff;
+    font-weight: 500;
+}
+.btn:hover{
+    box-shadow: 0 0 1rem #12f7ff;
+    background: #1d002c;
+    color: #12f7ff;
+}
+#footer{
+    padding: 100px 0 20px;
+    background: #1d002c;
+    position: relative;
+}
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left,.footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footer-right{
+    text-align: right;
+}
+.footer-row h1{
+ margin: 10px 0;
+}
+.footer-row p{
+    line-height: 35px;
+   }
+   .footer-left .fa, .footer-right .fa{
+    font-size: 20px;
+    color: #1d002c;
+    margin: 10px;
+   }
+   .footer-img{
+    max-width: 100px;
+    overflow: 0.1;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+    opacity: 0.2;
+   }
+   .social-links{
+    text-align: center;
+   }
+   .social-links .fa{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid #1d002c;
+    margin: 40px 5px 0;
+    color: #12f7ff;
+    cursor: pointer;
+    transition: .5s;
+   }
+   .social-links .fa:hover{
+    background: #1d002c;
+    color: #fff;
+    transform: translateY(-7px);
+   }
+   .social-links p{
+    font-size: 12px;
+    margin-top: 20px;
+   }
+   @media screen and (max-width:770px) {
+    .footer-left,.footer-right{
+        flex-basis: 100%;
+        font-size: 14px;
+    }
+    .footer-img{
+        top: 25%;
+    }
+   }
+
+    .about-us{
+        width: 80%;
+        margin: auto;
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+    .about-col{
+        flex-basis: 48%;
+        padding: 30px 2px;
+    }
+    .about-col img{
+        width: 50%;
+        height: 50%;
+    }
+    .about-col h1{
+        padding-top: 0;
+    }
+    .about-col p{
+        padding: 15px 0 25px;
+    }
+.red-btn{
+    border: 1px solid #12f7ff;
+    background: transparent;
+    color: #1d002c;
+}
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+    padding-top: 70px;
+}
